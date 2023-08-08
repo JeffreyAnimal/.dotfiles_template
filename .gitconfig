@@ -1,3 +1,9 @@
 [user]
 	name = Fabi
-	email = fabian.reisacher@gmx.de
+	email = 120835312+JeffreyAnimal@users.noreply.github.com
+[pull]
+	rebase = false
+[alias]
+	st = status
+[core]
+	editor = nvim
