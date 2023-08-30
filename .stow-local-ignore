@@ -1,0 +1,12 @@
+# Stow-ignore
+
+# Readme
+README.md
+LICENSE
+
+# Skripts
+install.sh
+test.sh
+
+# Gitfiles
+/.git
