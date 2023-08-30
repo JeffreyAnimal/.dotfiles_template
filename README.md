@@ -3,5 +3,5 @@ manage dotfiles across multiple devices
 
 ## Installation
 
-- clone <https://github.com/JeffreyAnimal/.dotfiles>ainto home directory
-- run Installation skript install.sh
+1. Clone <https://github.com/JeffreyAnimal/.dotfiles> into home directory
+2. Run Installation skript install.sh

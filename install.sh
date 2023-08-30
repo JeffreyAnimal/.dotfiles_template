@@ -11,15 +11,21 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)";
 # Install Packages required
 brew install stow neovim;
 
-echo "Beware! In the next Step, existing dotfiles will be overwritten.\nContinue? (Y)";
+echo -e "\n######################################################";
+
+# Show possible links
+cd ~/.dotfiles;
+stow --simulate -v .;
+
+# Ask 
+echo -e "Beware! In the next Step, existing dotfiles will be overwritten with the Links shown.\nContinue? (Y)";
 read var_keyInput;
 
-if ["$var_keyInput" != "Y"] OR ["$var_keyInput" != "y"]; then
-	echo "Aborting";
-	exit 0;
+if [[ !("$var_keyInput" == "Y" ||  "$var_keyInput" == "y") ]]; then
+	echo "Aborting"
+	exit 0
 fi
-
 
 # Stow Creating Softlinks to actual dotfiles
 cd ~/.dotfiles;
-stow --simulate -v . # Remove Flag if working
+stow -v . 
