@@ -1,7 +1,7 @@
-# .dotfiles
+# .dotfiles_template
 manage dotfiles across multiple devices
 
-## Installation
+Coming soon...
 
-1. Clone <https://github.com/JeffreyAnimal/.dotfiles> into home directory
-2. Run Installation skript install.sh
+Easy to setup and maintain dotfiles Repository-template as base for your own .dotfiles Repo.
+
